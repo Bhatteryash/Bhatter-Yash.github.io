@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yash Bhatter Portfolio</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/71a9c32d59.js" crossorigin="anonymous"></script>
 </head>
 <body>
    
@@ -13,16 +14,19 @@
         <div class="container">
             <nav>
                 <img src="images/logo.PNG" class="logo">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Project</a></li>
-                    <li><a href="">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Java Backend Developer</p>
                 <h1>Hi, I'm <span> Yash Bhatter</span><br> From India</h1>
+                <a href="images/Yash-Bhatter-Resume.pdf" class="btn" download >Resume</a>
             </div>
         </div>
     </div>
@@ -33,12 +37,117 @@
                 <div class="about-col-1">
                     <img src="images/newestimage.PNG" >
                 </div>
-                <div class="about-col-1">
-                    <h1>About Me</h1>
-                    <p>ewiuefh8efje</p>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Aspiring Java Backend Developer with more than 1000 hours of deliberate practice,
+                         Contributed to multiple groups and solo projects and can write clean and optimized code. 
+                         To secure a responsible career opportunity to fully utilize the training and skills.
+                         While making a significant contribution to the company. </p>
+
+                         <div class="details">
+                            <p class="skill-ed active" onclick="opentab('Technical')">Technical Skills</p>
+                            <p class="skill-ed" onclick="opentab('Skills')">Skills</p>
+                            <p class="skill-ed" onclick="opentab('Education')">Education</p>
+                         </div>
+                        <div class="contents active-tab" id="Technical">
+                            <ul>
+                                <li><span>Java</span> </li>
+                                <li><span>JavaScript</span></li>
+                                <li><span>Html / Css</span></li>
+                            </ul>
+                        </div>
+                        <div class="contents" id="Skills">
+                            <ul>
+                                <li><span> Proactive </span></li>
+                                <li><span>Problem Solving</span></li>
+                                <li><span>Time Management</span></li>
+                                <li><span>Communication Skills</span></li>
+                                <li><span>Remote work and Collaboration</span></li>
+                            </ul>
+                         </div>
+                         <div class="contents" id="Education">
+                            <ul>
+                                <li><span>Full Stack Web Development  2022</span><br>Masai School</li>
+                                <li><span>Bachlor's Of Engineering 2017-2021</span><br> Chhattisgarh Swami Vivekanand Technical Institute </li>
+                                <li><span>12th Standard 2016-2017</span><br>D.D.M Public School</li>
+                            </ul>
+                         </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="work">
+                    <img src="images/Project_1.PNG">
+                    <div class="layer">
+                        <h3>Indian Express -Clone</h3>
+                        <p> Tech Stack- HTML , CSS , JAVASCRIPT , NEWS API,YOTUBE API.<br> Provide News of all over the world</p>
+                        <div>
+                        <a href="https://github.com/Bhatteryash/dramatic-reason-5304" target="_blank">Github</a>
+                        <a href="https://dramatic-reason-5304.netlify.app/" target="_blank">Live</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Project_3.PNG">
+                    <div class="layer">
+                        <h3>Myntra -Clone</h3>
+                        <p> Tech Stack- HTML , CSS , JAVASCRIPT<br> Shop whatever you want</p>
+                        <div>
+                            <a href="https://github.com/sumitraghavwork/mytro-di-myntra" target="_blank">Github</a>
+                            <a href="https://fantastic-fenglisu-9f7a9b.netlify.app/" target="_blank">Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Project_2.PNG">
+                    <div class="layer">
+                        <h3>Student Management System -Clone</h3>
+                        <p> Tech Stack- HTML , CSS , JAVASCRIPT<br> A System where you can add lectures assignments and student</p>
+                        <div>
+                        <a href="https://github.com/Bhatteryash/Student-Management-System" target="_blank">Github</a>
+                        <a href="https://magnificent-cascaron-7cba21.netlify.app/" target="_blank">Live</a>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+   
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> YashBhatter.yb@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91-7389337983</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/yash-bhatter-174a57115/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Bhatteryash" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder=" Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Yash. Made with <i class="fa-solid fa-heart"></i> By Yash Bhatter</p>
+        </div>
+    </div>
+
 </body>
 </html>
+
+<script src="index.js"></script>
