@@ -115,6 +115,9 @@ color: #ababab;
     font-weight: 600;
     color: white;
 }
+.about-col-2 p{
+line-height: 20px;
+}
 .details{
     display: flex;
     margin: 20px 0px 40px;
