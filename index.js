@@ -1,3 +1,13 @@
+
+
+// var typed = new Typed(".typing",{
+//     strings:["Yash Bhatter"],
+//     typespeed:100,
+//     backspeed:60,
+//     loop:true
+//   })
+  
+
 let details=document.getElementsByClassName("skill-ed");
 let content=document.getElementsByClassName("contents");
 
@@ -22,6 +32,13 @@ sidemenu.style.right="0";
 closemenu=()=>{
     sidemenu.style.right="-200px";
 }
+
+
+
+
+
+
+
 
 
   const scriptURL = 'https://script.google.com/macros/s/AKfycbxikQI-lHaHmDgM8jOrq1aXC-9aLdMrGUPqWZeuw1GshvdLAZfz294EJZxsi0MuG3_H/exec'

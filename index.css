@@ -6,10 +6,11 @@
 }
 html{
     scroll-behavior: smooth;
+    background-color: #080808;
 }
 body{
-    background-color: #080808;
-    color: white;
+    
+    color: #fff;
 }
 #header{
     width: 100%;
@@ -67,7 +68,10 @@ nav ul li a:hover::after{
     position: absolute;
     right: 16%;
     bottom: 3%;
+   
 }
+
+
 .header-text h1{
     font-size: 60px;
     margin: 20px 0px;
@@ -96,6 +100,7 @@ nav ul li a:hover::after{
 #about{
 padding:60px 0px;
 color: #ababab;
+background-color: #101010;
 }
 .row{
     display: flex;
@@ -175,6 +180,7 @@ font-size: 20px;
 
 #portfolio{
     padding: 50px 0px;
+    background-color: #101010;
 
 }
 .project-list{
@@ -238,6 +244,9 @@ transform: scale(1.1);
 .work:hover .layer{
     height: 100%;
 }
+#contact{
+    background-color: #101010;
+}
 
 .contact-left{
     flex-basis: 35%;
@@ -290,6 +299,7 @@ form input,form textarea{
     display: inline-block;
     background-color: #ff004f;
     color: #fff;
+    border: 1px solid #ff004f;
     font-size: 18px;
     padding: 14px 60px;
     margin-bottom: 10px;
@@ -316,11 +326,10 @@ nav .fas{
 }
 
 
-@media  screen and (min-width:300px) and (max-width:599px){
+@media  screen and (min-width:280px) and (max-width:600px){
 
     #header{
         background-image: url(images/plane_black.PNG);
-        
     }
 
 .header-text{
@@ -328,6 +337,7 @@ nav .fas{
     display: flex;
     flex-direction: column;
     margin: 40% auto;
+    height: 50vh;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -406,17 +416,15 @@ nav ul .fas{
 
 }
 
-@media  screen and (min-width:600px) and (max-width:850px){
-
-    
+@media  screen and (min-width:601px) and (max-width:950px){
 
 .header-text{
-    /* margin-top: 50%; */
     font-size: 16px;
-    bottom: 10%;
+    right:13%;
+    bottom: 15%;
 }
 .header-text h1{
-    font-size: 30px;
+    font-size: 40px;
 }
 nav .fas{
     display: block;
