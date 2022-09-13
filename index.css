@@ -14,7 +14,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(https://raw.githubusercontent.com/Fealps/portfolio/35405fc7bf51cc26c9e57b6386cf2d6759752dff/src/assets/images/developerActivity.svg);
+    background-image: url(images/developerActivity.svg);
     background-size: cover;
     background-position:center;
 }
@@ -408,10 +408,7 @@ nav ul .fas{
 
 @media  screen and (min-width:600px) and (max-width:850px){
 
-    #header{
-        background-image: url(https://raw.githubusercontent.com/Fealps/portfolio/35405fc7bf51cc26c9e57b6386cf2d6759752dff/src/assets/images/developerActivity.svg);
-       
-     }
+    
 
 .header-text{
     /* margin-top: 50%; */
