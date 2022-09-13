@@ -155,9 +155,18 @@ margin:15px 0px;
 .contents{
     display:none ;
 }
+
+.contents ul li i{
+margin-right: 10px;
+font-size: 20px;
+}
+
 .contents.active-tab{
     display:block ;
 }
+
+
+/* Portfolio-------- */
 
 
 #portfolio{
@@ -204,7 +213,7 @@ margin:15px 0px;
 }
 .layer h3{
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 7px;
 }
 .layer a{
     color: #ff004f;
