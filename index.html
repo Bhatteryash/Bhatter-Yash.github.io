@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yash Bhatter Portfolio</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="github.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://kit.fontawesome.com/71a9c32d59.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
    
@@ -84,6 +86,13 @@
         </div>
     </div>
 
+    <div class="container git">
+        <h1 class="sub-title">GitHub Calendar</h1>
+    <div class="calendar">
+        <!-- Loading stuff -->
+        <!-- Loading the data just for you. -->
+      </div>
+    </div>
     <div id="portfolio">
         <div class="container">
             <h1 class="sub-title">My Projects</h1>
@@ -158,3 +167,7 @@
 </html>
 
 <script src="index.js"></script>
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+<script>
+  GitHubCalendar(".calendar", "Bhatteryash", { responsive: true });
+</script>
